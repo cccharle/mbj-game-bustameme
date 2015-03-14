@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+/* GLOBAL.CSS | Global styles for MyBeanJar Puzzle */
+
+body {
+  background-color: #da4d32;
+}
+
+p {
+  margin: 0 0 1em;
+  font-size: 60%;
+  line-height: 125%;
+}
+
+p:last-child {
+  margin: 0 0 0;
+}
+
+a {
+  color: #c59a1e;
+}
+
+.container {
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.hidden {
+  display: none;
+}
+
+#puzzImg {
+  width: 100%;
+  height: 100% !important;
+}
+
+#puzz-outer {
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+.jqp-piece {
+  background-size: 300%;
+  width: 33.33%;
+  height: 33.33%;
+}
+
+.jqp-background {
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.all-columns {
+  width: 80%;
+}
+
+#hintbutton {
+  position: relative;
+  cursor: pointer;
+  margin: 0% 15%;
+  width: 70%;
+}
+
+#hintbutton:active {
+  position: relative;
+  cursor: pointer;
+  margin: 0% 15.5%;
+  width: 69%;
+}
+
+.jqPuzzle .jqp-wrapper {
+  background-color: rgba(0,0,0,0.9) !important;
+  box-shadow: 0 0 3vh 1vh rgba(0,0,0,0.75) !important;
+}
+
+.jqp-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+/* ~~ PhoneGap View Defaults ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+
+.pg-page {
+  height: 100%;
+}
+
+#puzz-outer {
+  background: url(../img/puzzframe.jpg);
+  background-size: cover;
+  background-position: center -14.5vh;
+  padding-top: 10vh;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  height: 71vh;
+  background-color: #493c41;
+}
+
+#bam-title {
+  position: absolute;
+  z-index: 5;
+  display: block;
+  margin: 0% 10%;
+  top: 0;
+  width: 80%;
+}
+
+
+
+@media all and (max-width: 600px) and (orientation:portrait) {
+  /* Mobile portrait */
+
+  body {
+    background-color: #493c41;
+  }
+
+  #app {
+    position: relative;
+    height: 100vh;
+    /* 16 of 16:9; */
+    /*width: 39.375vw; */
+    /*  9 of 16:9; */
+    overflow: hidden;
+  }
+
+  .container {
+    width: 70vw;
+    /* Necessary to maintain 1:1 ratio of inner container */
+    height: 70vw;
+  }
+
+  .pg-page {
+    height: 100vh !important;
+  }
+
+  .mbj-footer {
+    font-size: 5vw;
+  }
+
+  #puzz-outer {
+    background-size: 161.5vw !important;
+    background-position: center -40.5vw;
+    padding-top: 13vh;
+    background-origin: content-box;
+    height: 82vh;
+  }
+
+  #puzzImg,
+  .jqp-wrapper {
+    height: 70vw !important;
+    width: 70vw;
+  }
+
+  .footer-header-strip {
+    font-size: 2vh;
+  }
+}
+
+@media all and (orientation:landscape) {
+  /* Desktop landscape */
+
+  body {
+    font-size: 3vh !important;
+  }
+
+  #app {
+    position: relative;
+    height: 70vh;
+    /* 16 of 16:9; */
+    width: 39.375vh;
+    /*  9 of 16:9; */
+    border: 3vh solid #fff;
+    overflow: hidden;
+    margin: 5vh auto;
+    box-sizing: content-box;
+    border-radius: 4vh;
+    border-bottom: 10vh solid #fff;
+    border-top: 10vh solid #fff;
+    box-shadow: 1.5vh 1.5vh 0px 0.5vh rgba(0,0,0,0.5);
+  }
+
+  .container {
+    width: 24.5vh;
+    /* Necessary to maintain 1:1 ratio of inner container */
+    height: 24.5vh;
+  }
+
+  #hintbutton:active {
+    margin-top: 1px;
+  }
+
+  .mbj-footer {
+    font-size: 2vh;
+  }
+}
+
+@media all and (min-width: 600px) and (orientation:portrait) {
+  /* Desktop portrait */
+
+  body {
+    font-size: 3vw !important;
+  }
+
+  #app {
+    position: relative;
+    height: 70vw;
+    /* 16 of 16:9; */
+    width: 39.375vw;
+    /*  9 of 16:9; */
+    border: 3vw solid #fff;
+    overflow: hidden;
+    margin: 5vw 22.6875vw;
+    box-sizing: content-box;
+    border-radius: 4vw;
+    border-bottom: 10vw solid #fff;
+    border-top: 10vw solid #fff;
+    box-shadow: 1.5vw 1.5vw 0px 0.5vw rgba(0,0,0,0.5);
+  }
+
+
+  .container {
+    width: 24.3vh;
+    /* Necessary to maintain 1:1 ratio of inner container */
+    height: 24.3vh;
+  }
+
+  .mbj-footer {
+    font-size: 1.75;
+  }
+}

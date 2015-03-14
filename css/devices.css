@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* DEVICES.CSS | Device-specific styles */
+
+@media only screen 										/* iPhone 5 */
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+  #app {
+    /*max-width: 320px;*/
+    max-height: 508px;
+  }
+
+  #puzzImg,
+  .jqp-wrapper {
+    height: 50vw !important;
+    width: 50vw;
+  }
+
+  .container {
+    height: 50vw;
+  }
+
+  #puzz-outer {
+    background-size: 115.5vw !important;
+    background-position: center -29.5vw;
+  }
+
+  #hintbutton {
+    margin: 0% 25% 0 25%;
+    width: 50%;
+  }
+
+   #hintbutton:active {
+    margin: 0% 25.5% 0 25.5%;
+    width: 49%;
+  }
+
+  .mbj-footer {
+    position: fixed;
+  }
+}
+
+@media only screen 										/* iPhone 6 */
+and (min-device-width : 750px) 
+and (max-device-width : 1334px) {
+  #app {
+    /*max-width: 750px;*/
+    max-height: 1334px;
+  }
+}
+
+/*@media only screen 									/* iPhone 6 Plus /
+and (min-device-width : 1080px) 
+and (max-device-width : 1920px) { 
+	body {
+		max-width: 1080px;
+		max-height: 1920px;
+	}
+}*/

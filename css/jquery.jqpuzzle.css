@@ -1,0 +1,40 @@
+/* outermost element which holds the full puzzle interface */
+
+.jqPuzzle {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  margin: auto;
+}
+
+/* only needed if external css rules set defaults for divs,
+   this rule only resets the most common properties */
+
+.jqPuzzle div {
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+  border-style: none;
+}
+
+/* div wrapper which holds the puzzle pieces and the solution image */
+
+.jqPuzzle .jqp-wrapper {
+  background-color: #333333;
+}
+
+/* a single puzzle piece */
+
+.jqPuzzle .jqp-piece {
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  font-size: 36px;
+}
+
+.jqPuzzle .jqp-piece:hover {
+  border-style: dashed;
+}
+
+/* the controls area which holds the buttons and the display */
+
+.jqPuzzle .jqp-controls {
+  float: left;
+}

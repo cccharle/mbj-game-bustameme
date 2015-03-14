@@ -1,0 +1,6 @@
+[submodule "lib/fastclick"]
+	path = lib/fastclick
+	url = https://github.com/ftlabs/fastclick
+[submodule "lib/mybeanjar"]
+	path = lib/mybeanjar
+	url = https://github.com/beanjar/MyBeanJar-SDK--Javascript--HTML5
