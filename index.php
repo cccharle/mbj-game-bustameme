@@ -110,6 +110,7 @@
                
                     <div class="mbj-footer">
                         <div class="footer-header-strip">
+                            <img class="grippy" src="img/grippybit.png">
                             <span class="footer-header-strip-counter count_wins">Thousands of Beans awarded</span>
                         </div>
                         <div id="main_container" class="panel_container">
