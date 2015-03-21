@@ -30,10 +30,10 @@
   font-size: 1rem;
   font-family: 'Museo','Helvetica Neue','Helvetica',Arial,Verdana,sans-serif;
   color: #cccccc;
-  position: absolute;
+  position: relative;
   margin: 0px auto;
   z-index: 10;
-  top: 10%;
+  top: -110%;
   -webkit-transform: translateZ(0);
   padding: 15px;
   box-shadow: 0 0 10px 1px rgba(0,0,0,0.8);
@@ -51,9 +51,9 @@
   background: -ms-linear-gradient(-45deg, #222229 47%,#37373e 100%);
   background: linear-gradient(135deg, #222229 47%,#37373e 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222229', endColorstr='#37373e',GradientType=1 );
-  float: right;
-  max-height: 78% !important;
+  max-height: 75%;
   overflow: scroll;
+  width: 75%;
 }
 
 .mbj_notification_container input,
@@ -372,6 +372,7 @@ p.mbj_caption {
 
 .mbj_notification_title {
   text-align: center;
+  padding-right: 2rem;
 }
 
 .mbj_notification_title img {
@@ -382,7 +383,7 @@ p.mbj_caption {
   margin: 0.2em auto;
   display: inline;
   position: relative;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-align: center;
   color: #ffd11f;
   line-height: 3rem;
@@ -401,9 +402,9 @@ p.mbj_caption {
 .mbj_notification_pane_selectors {
   display: -webkit-flex;
   display: flex;
-  flex-direction: -webkit-row;
+  -webkit-flex-direction: row;
   flex-direction: row;
-  justify-content: -webkit-space-between;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
@@ -662,7 +663,7 @@ Not advised to edit stuff below this line
   /*background: linear-gradient(135deg, #222229 47%,#37373e 100%);*/
   background: none;
   color: rgba(255,255,255,0.2);
-  position: absolute;
+  position: fixed;
   bottom: 0%;
   width: 100%;
 }
@@ -718,8 +719,8 @@ Not advised to edit stuff below this line
   align-items: center;
   background-color: #37383d;
   font-size: 0.75rem;
-  height: 3vh;
-  line-height: 3vh;
+  /*height: 3vh;*/
+  line-height: 2rem;
   border-bottom: 1px solid rgba(40, 40, 40, 1);
   box-sizing: border-box;
   background: #37383d;
